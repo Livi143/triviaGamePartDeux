@@ -33,7 +33,7 @@ var game = {
     },
     start: function(){
         timer = setInterval(game.countdown,1000);
-        $("#subwrapper").prepend('<h2>Time remaining: <span id="counter">120</span> Seconds</h2>')
+        $("#subwrapper").prepend('<h2>Time remaining: <span id="counter">20</span> Seconds</h2>')
         $("#start").remove(); // we don't need the start button once we've already started
         for(var i=0; i<questions.length; i++){
             $("#subwrapper").append('<h2>'+questions[i].question + '</h2>');
